@@ -203,6 +203,7 @@ public class AdMob extends Plugin {
                                     );
                                 call.success(new JSObject().put("value", true));
                             } else {
+                                mInterstitialAd = null;
                                 call.error("The interstitial wasn't loaded yet.");
                             }
                         }
